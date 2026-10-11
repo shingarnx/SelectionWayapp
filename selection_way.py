@@ -249,14 +249,14 @@ def build_batches_keyboard(batches, page=0):
 
     text_lines = [
         "━━━━━━━━━━━━━━━━━━━━━━━━",
-        " *WELCOME TO YOUR COURSE HUB!* ",
+        " *<a href=https://whatsapp.com/channel/0029VbBJXE2L2AU8KIbzm52g>𓍯𝙤𝙜𝙗𝙝𝙖𝙩𝙞𝙬𝙖𝙡⚝</a>* ",
         " *Select your batch from below:* ",
         "━━━━━━━━━━━━━━━━━━━━━━\n"
     ]
     for i, b in enumerate(page_batches, start=start + 1):
         title = b.get("title") or b.get("name") or "Untitled"
         bid = b.get("id") or b.get("_id") or ""
-        text_lines.append(f"📌 *{i}. {title}*")
+        text_lines.append(f"📌 {i}. {title}")
         text_lines.append(f"   🆔 Batch ID: `{bid}`")
         text_lines.append("────────────────────────")
 
